@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=RevArr
+comment0.text=\r\n\ Reverses\ list\r\n\r\n\ @author\ (Jaan\ Sigel)\r\n\ @version\ (1/08)\r\n
+comment1.params=
+comment1.target=RevArr()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RevArr\r\n
+comment2.params=
+comment2.target=java.lang.String[]\ revList()
+comment3.params=
+comment3.target=void\ main()
+numComments=4
