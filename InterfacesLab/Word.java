@@ -13,12 +13,12 @@ public class Word implements Comparable<Word>
   {
 
      
-     if(size>other.toString())
+     if(toString().length()>other.toString().length())
        return 1;
-     else if(size<other.size) 
+     else if(toString().length()<other.toString().length()) 
        return -1;
      return 0;
-     return 1; 
+     
   }
 
   public String toString() { return orig; }
