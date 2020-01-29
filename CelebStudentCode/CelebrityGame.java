@@ -3,8 +3,8 @@ import java.util.ArrayList;
 /**
  * The framework for the Celebrity Game project
  * 
- * @author cody.henrichsen
- * @version 2.3 25/09/2018 refactored the prepareGame and play methods
+ * @author Jaan Sigel
+ * @version 2.3 1/27/20 refactored the prepareGame and play methods
  */
 public class CelebrityGame
 {
@@ -142,7 +142,7 @@ public class CelebrityGame
      */
     public String sendClue()
     {
-        return null;
+        return gameCelebrity.getClue();
     }
 
     /**
@@ -153,6 +153,6 @@ public class CelebrityGame
      */
     public String sendAnswer()
     {
-        return null;
+        return gameCelebrity.getAnswer();
     }
 }

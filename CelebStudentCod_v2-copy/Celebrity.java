@@ -7,27 +7,73 @@
  */
 public class Celebrity
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
-     * Constructor for objects of class Celebrity
-     */
-    public Celebrity()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+	 * The clue to determine the celebrity
+	 */
+	String clue;
+	/**
+	 * The answer or name of the celebrity.
+	 */
+	String answer;
+	/**
+	 * Creates a Celebrity instance with the supplied answer and clue
+	 * @param answer
+	 * @param clue
+	 */
+	public Celebrity(String answer, String clue)
+	{
+	    this.answer=answer;
+	    this.clue=clue;
+	}
+	public Celebrity()
+	{
+	    this.answer="";
+	    this.clue="";
+	}
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+	/**
+	 * Supplies the clue for the celebrity
+	 * @return
+	 */
+	public String getClue()
+	{
+		return clue;
+	}
+
+	/**
+	 * Supplies the answer for the celebrity.
+	 * @return
+	 */
+	public String getAnswer()
+	{
+		return answer;
+	}
+
+	/**
+	 * Updates the clue to the provided String.
+	 * @param clue The new clue.
+	 */
+	public void setClue(String clue)
+	{
+		this.clue=clue;
+	}
+
+	/**
+	 * Updates the answer to the provided String.
+	 * @param answer The new answer.
+	 */
+	public void setAnswer(String answer)
+	{
+		this.answer=answer;
+	}
+	
+	/**
+	 * Provides a String representation of the Celebrity.
+	 */
+	@Override
+	public String toString()
+	{
+		return answer + ": " + clue;
+	}
+	
 }

@@ -106,8 +106,12 @@ public class CelebrityGame
   {
     
     Celebrity currentCelebrity;
-   
+   if(type.equals("Literature")){
+    currentCelebrity = new LiteratureCelebrity(name, guess);
+   }else{
     currentCelebrity = new Celebrity(name, guess);
+   }
+
   
     this.celebGameList.add(currentCelebrity);
     

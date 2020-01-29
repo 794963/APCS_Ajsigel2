@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=LiteratureCelebrity
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SportCelebrity\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=answer\ clue
+comment1.target=LiteratureCelebrity(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Creates\ a\ Celebrity\ instance\ with\ the\ supplied\ answer\ and\ clue\r\n\ @param\ answer\r\n\ @param\ clue\r\n
+comment2.params=
+comment2.target=java.lang.String\ getClue()
+comment2.text=\r\n\ Supplies\ the\ clue\ for\ the\ celebrity\r\n\ @return\r\n
+comment3.params=
+comment3.target=java.lang.String\ getAnswer()
+comment3.text=\r\n\ Supplies\ the\ answer\ for\ the\ celebrity.\r\n\ @return\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ Provides\ a\ String\ representation\ of\ the\ Celebrity.\r\n
+numComments=5
