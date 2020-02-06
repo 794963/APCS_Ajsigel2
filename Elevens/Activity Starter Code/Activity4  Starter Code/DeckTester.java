@@ -8,11 +8,12 @@ public class DeckTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		String[] ranks = {"jack", "queen", "king"};
-		String[] suits = {"blue", "red"};
-		int[] pointValues = {11, 12, 13};
+		String[] ranks = {"ace","two","three","four","five","six","seven","eight","nine","ten","jack", "queen", "king"};
+		String[] suits = {"hearts", "spades","diamonds","clubs"};
+		int[] pointValues = {1,2,3,4,5,6,7,8,9,10,0,0,0};
+		
 		Deck d = new Deck(ranks, suits, pointValues);
-
+		int ending = d.size()-1;
 		System.out.println("**** Original Deck Methods ****");
 		System.out.println("  toString:\n" + d.toString());
 		System.out.println("  isEmpty: " + d.isEmpty());
@@ -32,8 +33,8 @@ public class DeckTester {
 		System.out.println();
 		System.out.println();
 
-		System.out.println("**** Deal Remaining 5 Cards ****");
-		for (int i = 0; i < 5; i++) {
+		System.out.println("**** Deal Remaining Cards ****");
+		for (int i = 0; i < ending; i++) {
 			System.out.println("  deal: " + d.deal());
 		}
 		System.out.println();
