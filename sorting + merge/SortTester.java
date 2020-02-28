@@ -11,6 +11,7 @@ public class SortTester
     // instance variables - replace the enumListample below with your own
     ArrayList<Integer> numList = new ArrayList<Integer>();
     ArrayList<Integer> copy = new ArrayList<Integer>();
+    int[] a = new int[10];
     /**
      * Constructor for objects of class SortTester
      */
@@ -18,7 +19,12 @@ public class SortTester
     {
         // initialise instance variables
         loadNumbers(x);
-        printList();
+        
+    loadNumbersInt();
+    printListin(a);
+    mergeSort(a,a.length);
+    printListin(a);
+    printList();    
        bubbleSort();
         printList();
     insertSort();
@@ -31,6 +37,14 @@ public class SortTester
         numList.add((int)(Math.random()*100) + 1);
     }
     copy=numList;
+    }
+    public void loadNumbersInt(){
+    
+    for(int i=0; i<10;i++){
+        a[i] = (int)(Math.random()*100) + 1;
+    }
+    copy=numList;
+    
     }
     public void swap(int i,int j){
         int temp = numList.get(i);
@@ -123,6 +137,13 @@ public class SortTester
     public void printList(){
     for(int i = 0; i < numList.size(); i++){ 
             System.out.print(numList.get(i) + ", ");//  print all nums
+            
+        }
+        System.out.println();
+    }
+    public void printListin(int[] a){
+    for(int i = 0; i < a.length; i++){ 
+            System.out.print(a[i] + ", ");//  print all nums
             
         }
         System.out.println();
