@@ -3,7 +3,7 @@
  * Shuffles
  *
  * @author (Jaan Sigel)
- * @version (2/4/20)
+ * @version (2020)
  */
 import java.util.*;
 public class Shuffle
